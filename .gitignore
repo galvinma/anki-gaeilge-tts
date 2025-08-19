@@ -1,0 +1,9 @@
+input/
+output/
+audio/
+download/
+venv/*
+.ve/*
+__pycache__
+.vscode/*
+.env
