@@ -31,6 +31,9 @@ def run(args):
     errors = []
     df = pd.read_csv(args.input_file, delimiter=DELIMITER)
     for _, row in df.iterrows():
+        if row.empty or row["NoteType"][0] == "#":
+            continue
+
         try:
             logger.info(f"Processing: {row['Foreign']}")
             note_type, foreign, native, extra, tags = get_fields_split(row)

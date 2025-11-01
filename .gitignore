@@ -3,6 +3,7 @@ output/
 audio/
 audio
 download/
+notes/
 venv/*
 .ve/*
 __pycache__
